@@ -17,7 +17,7 @@ Video Demontrastion: https://youtu.be/NFnhQore9hg
   * Users can input a registration number to check a student’s detailed subject scores.
   * Graceful handling of invalid or missing student records.
 
-### Score Level Report by Subject**
+### Score Level Report by Subject
 
   * Report divides student scores into 4 levels:
 
@@ -27,7 +27,7 @@ Video Demontrastion: https://youtu.be/NFnhQore9hg
     * **Below 4**
   * The number of students per level per subject is displayed via charts using **Chartkick** + **Groupdate**.
 
-### Top 10 Students (Group A: Math, Physics, Chemistry)**
+### Top 10 Students (Group A: Math, Physics, Chemistry)
 
   * Displays top 10 students ranked by total score in Group A subjects.
   * Handled directly through ActiveRecord SQL aggregation.
@@ -72,11 +72,13 @@ Clean interface styled using Tailwind and partials in ERB views.
 **Install dependencies**
 * bundle install
 * yarn install
+* rails tailwindcss:install
 
 **Setup DB**
-*rails db:create
-*rails db:migrate
-*rails db:seed  # Imports data from CSV
+
+* rails db:create
+* rails db:migrate
+* rails db:seed  # Imports data from CSV
 
 **Start server**
 rails server
