@@ -7,17 +7,17 @@ Video Demontrastion: https://youtu.be/NFnhQore9hg
 
 ## Features
 
-*** Data Import & Storage**
+### Data Import & Storage
 
   * Raw CSV data (`diem_thi_thpt_2024.csv`) is parsed and stored into a PostgreSQL database.
   * Implemented using a combination of **Rails migrations** and **seeds** (`db/seeds.rb`).
 
-*** Search Student by Registration Number**
+### Search Student by Registration Number
 
   * Users can input a registration number to check a student’s detailed subject scores.
   * Graceful handling of invalid or missing student records.
 
-*** Score Level Report by Subject**
+### Score Level Report by Subject**
 
   * Report divides student scores into 4 levels:
 
@@ -27,13 +27,15 @@ Video Demontrastion: https://youtu.be/NFnhQore9hg
     * **Below 4**
   * The number of students per level per subject is displayed via charts using **Chartkick** + **Groupdate**.
 
-*** Top 10 Students (Group A: Math, Physics, Chemistry)**
+### Top 10 Students (Group A: Math, Physics, Chemistry)**
 
   * Displays top 10 students ranked by total score in Group A subjects.
   * Handled directly through ActiveRecord SQL aggregation.
 
-***Responsive UI**: Built with TailwindCSS. Compatible with desktop, tablet, and mobile.
-***Frontend Styling**: Clean interface styled using Tailwind and partials in ERB views.
+### Responsive UI: 
+Built with TailwindCSS. Compatible with desktop, tablet, and mobile.
+### Frontend Styling: 
+Clean interface styled using Tailwind and partials in ERB views.
 
 ##  Tech Stack
 
@@ -67,16 +69,16 @@ Video Demontrastion: https://youtu.be/NFnhQore9hg
 
 ### Setup Steps
 
-# Install dependencies
-bundle install
-yarn install
+**Install dependencies**
+* bundle install
+* yarn install
 
-# Setup DB
-rails db:create
-rails db:migrate
-rails db:seed  # Imports data from CSV
+**Setup DB**
+*rails db:create
+*rails db:migrate
+*rails db:seed  # Imports data from CSV
 
-# Start server
+**Start server**
 rails server
 
 ##  Validations & Security
