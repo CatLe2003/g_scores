@@ -1,0 +1,37 @@
+<div class="bg-white rounded shadow p-6 mb-6">
+  <div class="flex justify-between items-center">
+    <h2 class="text-xl font-bold">Reports</h2>
+    <%= link_to "Leaderboard", reports_top_students_path, class: "bg-black text-white px-4 py-2 rounded hover:bg-gray text-black" %>
+  </div>
+</div>
+
+<%# <%= puts @grouped_data %> 
+<div class="bg-white rounded shadow grid justify-center m-2">
+    <%= bar_chart @grouped_data, 
+            id: "score-chart",
+            height: "650px",
+            stacked: true, discrete: true, 
+            title: "Score Level Distribution by Subject", 
+            legend: "bottom",
+            library: 
+            {
+                tooltip: { enabled: true },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: "Subjects"
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: "Number of Students"
+                        }
+                    }
+                },
+                responsive: true
+            } 
+    %>
+</div>

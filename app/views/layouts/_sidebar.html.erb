@@ -1,0 +1,11 @@
+<div id="sidebar" class="bg-gradient-to-b from-yellow-400 to-teal-600 text-black w-full md:w-1/5 md:block hidden md:h-screen p-4">
+  <h2 class="text-lg font-bold mb-4">Menu</h2>
+  <hr class="border-t border-white border-opacity-30 mb-6">
+  <ul>
+    <li class="mb-6"><%= link_to "Dashboard", "#", class: "hover:underline" %></li>
+    <li class="mb-6"><%= link_to "Search Scores", root_path, class: "hover:underline #{'font-bold' if current_page?(root_path)}"  %></li>
+    <li class="mb-6"><%= link_to "Reports", reports_path, class:"hover:underline #{'font-bold' if controller_name == 'reports'}"  %></li>
+    <li><%= link_to "Settings", "#", class: "hover:underline" %></li>
+  </ul>
+</div>
+
