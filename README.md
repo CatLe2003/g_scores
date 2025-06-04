@@ -7,17 +7,17 @@ Video Demontrastion: https://youtu.be/NFnhQore9hg
 
 ## Features
 
-* ** Data Import & Storage**
+*** Data Import & Storage**
 
   * Raw CSV data (`diem_thi_thpt_2024.csv`) is parsed and stored into a PostgreSQL database.
   * Implemented using a combination of **Rails migrations** and **seeds** (`db/seeds.rb`).
 
-* ** Search Student by Registration Number**
+*** Search Student by Registration Number**
 
   * Users can input a registration number to check a student’s detailed subject scores.
   * Graceful handling of invalid or missing student records.
 
-* ** Score Level Report by Subject**
+*** Score Level Report by Subject**
 
   * Report divides student scores into 4 levels:
 
@@ -27,13 +27,13 @@ Video Demontrastion: https://youtu.be/NFnhQore9hg
     * **Below 4**
   * The number of students per level per subject is displayed via charts using **Chartkick** + **Groupdate**.
 
-* ** Top 10 Students (Group A: Math, Physics, Chemistry)**
+*** Top 10 Students (Group A: Math, Physics, Chemistry)**
 
   * Displays top 10 students ranked by total score in Group A subjects.
   * Handled directly through ActiveRecord SQL aggregation.
 
-*  **Responsive UI**: Built with TailwindCSS. Compatible with desktop, tablet, and mobile.
-*  **Frontend Styling**: Clean interface styled using Tailwind and partials in ERB views.
+***Responsive UI**: Built with TailwindCSS. Compatible with desktop, tablet, and mobile.
+***Frontend Styling**: Clean interface styled using Tailwind and partials in ERB views.
 
 ##  Tech Stack
 
@@ -78,28 +78,6 @@ rails db:seed  # Imports data from CSV
 
 # Start server
 rails server
-```
-
-## Project Structure Overview
-
-```
-app/
-│
-├── controllers/
-│   ├── students_controller.rb    # search & display student
-│   └── reports_controller.rb     # report & chart logic
-│
-├── models/
-│   └── student.rb                # OOP data handling
-│
-├── views/
-│   ├── students/                 # input + result views
-│   └── reports/                 # charts & reports
-│
-db/
-│   ├── seeds.rb                  # CSV import logic
-│   └── migrate/                  # schema setup
-```
 
 ##  Validations & Security
 
@@ -110,5 +88,5 @@ db/
 
 ## Author
 
-* Built by \Le Ngo Song Cat
+* Built by **Le Ngo Song Cat**
 
