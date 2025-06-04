@@ -1,7 +1,7 @@
 <div class="bg-white rounded shadow p-6 mb-6">
   <div class="flex justify-between items-center">
     <h2 class="text-xl font-bold mb-4">Top 10 Students in group A</h2>
-    <%= link_to "Reports", reports_path, class: "bg-black text-white px-4 py-2 rounded hover:bg-blue-500 hover:text-black" %>
+    <%= link_to "Reports", reports_path, class: "bg-black text-white px-4 py-2 rounded hover:bg-blue-500 hover:text-white" %>
   </div>
 </div>
 <%= puts @top_students%>
@@ -21,7 +21,7 @@
       <tbody>
         <% @top_students.each.with_index  do |student, index| %>
           <tr class="hover:bg-gray-50 <%= index.even? ? 'bg-white' : 'bg-gray-50' %>">
-            <td class="px-4 py-2 text-left"><%= index %></td>
+            <td class="px-4 py-2 text-left"><%= index + 1 %></td>
             <td class="px-4 py-2 text-left"><%= student.registration_number %></td>
             <td class="px-4 py-2 text-center"><%= student.math %></td>
             <td class="px-4 py-2 text-center"><%= student.physics %></td>

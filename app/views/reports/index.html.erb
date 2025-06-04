@@ -1,15 +1,15 @@
 <div class="bg-white rounded shadow p-6 mb-6">
   <div class="flex justify-between items-center">
     <h2 class="text-xl font-bold">Reports</h2>
-    <%= link_to "Leaderboard", reports_top_students_path, class: "bg-black text-white px-4 py-2 rounded hover:bg-gray text-black" %>
+    <%= link_to "Leaderboard", reports_top_students_path, class: "bg-black text-white px-4 py-2 rounded hover:bg-blue-500 hover:text-white" %>
   </div>
 </div>
 
 <%# <%= puts @grouped_data %> 
-<div class="bg-white rounded shadow grid justify-center m-2">
+<div class="bg-white rounded shadow">
     <%= bar_chart @grouped_data, 
             id: "score-chart",
-            height: "650px",
+            height: "550px",
             stacked: true, discrete: true, 
             title: "Score Level Distribution by Subject", 
             legend: "bottom",
