@@ -2,7 +2,7 @@
 
 A web application to manage, search, and analyze student scores from the 2024 Vietnamese national high school exam (`diem_thi_thpt_2024.csv`).
 
-Video Demontrastion: https://youtu.be/NFnhQore9hg
+Video Demontrastion: https://youtu.be/Yi06FVgkGIk?si=SQHh-dl7TQ1LGib2
 
 
 ## Features
@@ -56,7 +56,6 @@ Clean interface styled using Tailwind and partials in ERB views.
 
 * Rails Console for data debugging
 * Rails seeds and migration for data setup
-* Better Errors, Pry for debugging
 
 ##  Setup Instructions
 
