@@ -25,7 +25,7 @@ Video Demontrastion: https://youtu.be/Yi06FVgkGIk?si=SQHh-dl7TQ1LGib2
     * **6 to 7.99**
     * **4 to 5.99**
     * **Below 4**
-  * The number of students per level per subject is displayed via charts using **Chartkick** + **Groupdate**.
+  * The number of students per level per subject is displayed via charts using **Chartkick**.
 
 ### Top 10 Students (Group A: Math, Physics, Chemistry)
 
